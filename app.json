@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "Radio Santa Rosa",
+    "slug": "radio-santa-rosa",
+    "version": "1.0.0",
+    "scheme": "radiosantarosa",
+    "icon": "./assets/images/logo-santarosa.png",
+    "ios": {
+      "bundleIdentifier": "cl.santuariosantarosa.radio",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "cl.santuariosantarosa.radio",
+      "versionCode": 1
+    }
+  }
+},
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/logo-santarosa.png",
+        "backgroundImage": "./assets/images/logo-santarosa.png",
+        "monochromeImage": "./assets/images/logo-santarosa.png"
+      },
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.meag.RadioSantaCruz"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/logo-santarosa.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo-santarosa.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-build-properties",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "53591381-a083-4ea0-827b-f7ed0771dc86"
+      }
+    }
+  }
+}
