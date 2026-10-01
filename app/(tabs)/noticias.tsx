@@ -1,19 +1,19 @@
 // app/(tabs)/noticias.tsx — Noticias desde el WordPress de santuariosantarosa.cl
-import React, { useCallback, useState } from 'react';
+import { useFocusEffect } from 'expo-router';
+import { useCallback, useState } from 'react';
 import {
-  View,
-  Text,
+  ActivityIndicator,
+  FlatList,
   Image,
   ImageBackground,
-  FlatList,
-  TouchableOpacity,
-  ActivityIndicator,
-  RefreshControl,
   Linking,
+  RefreshControl,
   StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useFocusEffect } from 'expo-router';
 
 // ─────────────── CONSTANTES ───────────────
 const NEWS_URL =
@@ -99,7 +99,7 @@ export default function NoticiasScreen() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/microphones-with-sound-mixer-in-studio.jpg')}
+      source={require('@/assets/images/fondo.png')}
       style={styles.bg}
       resizeMode="cover"
     >

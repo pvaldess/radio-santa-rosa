@@ -3,24 +3,26 @@
     "name": "Radio Santa Rosa",
     "slug": "radio-santa-rosa",
     "version": "1.0.0",
-    "scheme": "radiosantarosa",
+    "orientation": "portrait",
     "icon": "./assets/images/logo-santarosa.png",
+    "scheme": "radiosantarosa",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "ios": {
+      "supportsTablet": true,
       "bundleIdentifier": "cl.santuariosantarosa.radio",
-      "buildNumber": "1"
+      "buildNumber": "1",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"],
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "cl.santuariosantarosa.radio",
-      "versionCode": 1
-    }
-  }
-},
-    "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/logo-santarosa.png",
-        "backgroundImage": "./assets/images/logo-santarosa.png",
-        "monochromeImage": "./assets/images/logo-santarosa.png"
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/logo-santarosa.png"
       },
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -31,8 +33,7 @@
         "android.permission.RECORD_AUDIO"
       ],
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "package": "com.meag.RadioSantaCruz"
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
@@ -71,10 +72,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "53591381-a083-4ea0-827b-f7ed0771dc86"
-      }
+      "router": {}
     }
   }
 }

@@ -1,18 +1,17 @@
 // app/(tabs)/donar.tsx — Donaciones al Santuario Santa Rosa de Pelequén
-import React from 'react';
+import { FontAwesome } from '@expo/vector-icons';
 import {
-  View,
-  Text,
-  Image,
-  ImageBackground,
-  ScrollView,
-  TouchableOpacity,
-  Linking,
-  Share,
-  StyleSheet,
+    Image,
+    ImageBackground,
+    Linking,
+    ScrollView,
+    Share,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { FontAwesome } from '@expo/vector-icons';
 
 // ─────────────── CONSTANTES (datos tomados de santuariosantarosa.cl) ───────────────
 const ACCENT = '#1bb0ce';
@@ -54,7 +53,7 @@ export default function DonarScreen() {
 
   return (
     <ImageBackground
-      source={require('@/assets/images/microphones-with-sound-mixer-in-studio.jpg')}
+      source={require('@/assets/images/fondo.png')}
       style={styles.bg}
       resizeMode="cover"
     >
